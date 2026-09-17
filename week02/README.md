@@ -26,27 +26,29 @@
 
 ## 리눅스 명령어
 1. ls -l 권한 관련 출력
-> -rwxr-xr-- 1 neary neary 4096 Sep 6 17:41 s.txt
-> 
-> -    ----> 파일 종류 (- 파일, d 디렉터리, l 심볼릭 링크)
-> rwx  ----> user/owner(소유자) : 읽기+쓰기+실행
-> r-x  ----> group(그룹) : 읽기+실행
-> r--  ----> others(기타 사용자) : 읽기
->
-> 권한 수정 방법 -> chmod `<권한>` `<파일이름>`
-> chmod +x s.txt    ---> 사용자(user)에게 실행 권한 추가
-> chmod g-w s.txt   ---> 그룹(group)에게 쓰기 권한 제거
-> chmod 750 s.txt   ---> 읽기(r): 4 / 쓰기(w): 2 / 실행(x): 1
->                   ---> 소유자: 7 (4+2+1) -> 읽기, 쓰기, 실행 권한
->                   ---> 그룹: 5 (4+1) -> 읽기, 실행 권한
->                   ---> 기타: 0 -> 권한 없음
+```
+-rwxr-xr-- 1 neary neary 4096 Sep 6 17:41 s.txt
+ 
+`-`  ----> 파일 종류 (- 파일, d 디렉터리, l 심볼릭 링크)
+rwx  ----> user/owner(소유자) : 읽기+쓰기+실행
+r-x  ----> group(그룹) : 읽기+실행
+r--  ----> others(기타 사용자) : 읽기
+
+권한 수정 방법 -> chmod `<권한>` `<파일이름>`
+chmod +x s.txt    ---> 현재 권한 상태를 기준으로 실행 권한 추가
+chmod g-w s.txt   ---> 그룹(group)에게 쓰기 권한 제거
+chmod 750 s.txt   ---> 읽기(r): 4 / 쓰기(w): 2 / 실행(x): 1
+                  ---> 소유자: 7 (4+2+1) -> 읽기, 쓰기, 실행 권한
+                  ---> 그룹: 5 (4+1) -> 읽기, 실행 권한
+                  ---> 기타: 0 -> 권한 없음
+```
 2. cat와 >
-> echo "Hello, " > 1.txt
-> echo "Devops" > 2.txt
-> cat 1.txt 2.txt > s.txt   ---> 1.txt와 2.txt 내용을 합쳐서 s.txt에 덮어쓰기
+echo "Hello, " > 1.txt
+echo "Devops" > 2.txt
+cat 1.txt 2.txt > s.txt   ---> 1.txt와 2.txt 내용을 합쳐서 s.txt에 덮어쓰기
 3. cat와 >>
-> echo "Hi!" > 3.txt
-> cat 3.txt >> s.txt   ---> 3.txt의 내용이 s.txt의 맨 뒤에 추가
+echo "Hi!" > 3.txt
+cat 3.txt >> s.txt   ---> 3.txt의 내용이 s.txt의 맨 뒤에 추가
 4. df -h
     * 디스크 사용량 확인
     * df: disk free / h: human-readable
@@ -57,8 +59,8 @@
 6. !ls
     * ls로 시작하는 가장 최근 명령어를 찾아서 실행
 7. 파일 내용 보기
-> less `<파일 이름>`     ---> 긴 파일 내용 보기
-> head `<파일 이름>`     ---> 앞 부분만 보기
+less `<파일 이름>`     ---> 긴 파일 내용 보기
+head `<파일 이름>`     ---> 앞 부분만 보기
 > tail `<파일 이름>`     ---> 뒷 부분만 보기
 > tail -f `<로그 파일>`  ---> 뒷 부분 보여준 뒤, 파일에 새로운 내용이 추가되면 실시간으로 계속 출력
 >                        ---> f: follow / 종료: ctrl + c
