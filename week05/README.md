@@ -85,4 +85,18 @@ docker exec -it <컨테이너 이름> bash	-> 컨테이너 안에서 셸 실행
 root@ed35db34e032:/# exit	-> 컨테이너에서 나가기
 ```
 - 컨테이너를 삭제하면 컨테이너의 쓰기 계층에 저장된 변경사항도 함께 사라짐
+------
+## Docker 실습 결과
+![nginx1](images/nginx1.png)
 
+![nginx2](images/nginx2.png)
+
+![nginx3](images/nginx3.png)
+
+![curl_confirm](images/curl_confirm.png)
+
+![docker_ps](images/docker_ps.png)
+
+![docker_desktop](images/docker.png)
+
+![docker_rm](images/docker_rm.png)
