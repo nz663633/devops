@@ -50,7 +50,7 @@ CMD ["python", "app.py"]
 1. 나만의 방명록 배포
   - 색상 변경(#5B2333)
   - index.html 수정(두마디도 좋아요)
-![my_guestbook](images/week06_1)
+![my_guestbook](images/week06_1.png)
 2. 친구 이미지 위에 내 설정 굽기
-![FROM_friend](images/week06_2)
-![FROM_friend_different_color](images/week06_3)
+![FROM_friend](images/week06_2.png)
+![FROM_friend_different_color](images/week06_3.png)
