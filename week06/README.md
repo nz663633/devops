@@ -44,3 +44,13 @@ CMD ["python", "app.py"]
   -> 한 레이어가 바뀌면, **그 아래 레이어는 전부 다시 생성**<br>
   -> 한 단계의 캐시가 무효화되면 이후 단계도 다시 처리<br>
   -> **자주 바뀌는 것을 뒤에** 두면 전체 속도가 빨라짐<br>
+-----
+## 실습 결과
+
+1. 나만의 방명록 배포
+  - 색상 변경(#5B2333)
+  - index.html 수정(두마디도 좋아요)
+![my_guestbook](images/week06_1)
+2. 친구 이미지 위에 내 설정 굽기
+![FROM_friend](images/week06_2)
+![FROM_friend_different_color](images/week06_3)
