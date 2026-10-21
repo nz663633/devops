@@ -1,4 +1,4 @@
-### Docker Compose
+## Docker Compose
 
 ### Docker 개념 정리
 1. Image
@@ -28,6 +28,15 @@
 - 간편한 실행
 - 설정 및 환경의 일관성
 
+### down 후 up과 down -v 후 up 차이 비교
+docker compose down 	-> compose 네트워크 삭제
+docker compose down -v	-> + volume(데이터)까지 삭제
+
+docker compose up -d	-> 컨테이너, 네트워크 다시 생성, 볼륨 데이터도 새로 생성
+
+**-v 옵션은 Compose가 관리하는 볼륨까지 삭제할 수 있으므로 주의해서 사용할 것**
+
+### .env를 Git에 올리지 않는 이유
 **.env는 비밀번호나 API 키와 같은 민감한 정보가 담겨있기 때문에 공개 저장소인 Github에 올리지 않을 것**
 
 -----------------------
