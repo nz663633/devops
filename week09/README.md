@@ -38,3 +38,14 @@ Pod 실행 및 상태 관리
 | kubelet | 각 건물의 관리자 |
 | Pod | 건물 안의 사무실 |
 | 컨테이너 | 사무실에서 실제 업무를 수행하는 직원 |
+
+----------
+## 실습
+
+### kubectl get nodes
+![week09_1](images/week09_1.png)
+
+### Pod 지운 뒤, 새 Pod가 태어난 get pods -w 화면
+![week09_2](images/week09_2.png)
+![week09_3](images/week09_3.png)
+
