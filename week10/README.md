@@ -3,7 +3,7 @@
 ### 1. replicas를 5로 늘리기
 ![kubectl_get_pods_1](images/kubectl_get_pods_1.png)
 ![kubectl_get_replicaset](images/kubectl_get_replicaset.png)
-![kubectl_get_deployments](images/kubectl_get_deployments)
+![kubectl_get_deployments](images/kubectl_get_deployments.png)
 <br>
 
 ### 2. 서로 다른 Pod hostname
@@ -18,3 +18,20 @@
 ![kubectl_delete_pod](images/kubectl_delete_pod.png)
 ![kubectl_get_pods_2](images/kubectl_get_pods_2.png)
 <br>
+
+### 4. v1 -> v2 롤링 업데이트
+![guestbook_v1](images/guestbook_v1.png)
+<br>
+- index.html 소스 수정
+- docker 이미지 빌드
+![fix_index_image_build](images/fix_index_image_build.png)
+<br>
+- ghcr에 이미지 업로드
+![image_upload](images/image_upload.png)
+<br>
+- deployment 이미지 변경
+- 롤링 업데이트 확인 및 롤백
+![change_image](images/change_image.png)
+<br>
+- kubectl rollout history 결과 확인
+![kubectl_rollout_history](images/kubectl_rollout_history.png)
