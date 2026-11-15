@@ -22,16 +22,20 @@
 ### 4. v1 -> v2 롤링 업데이트
 ![guestbook_v1](images/guestbook_v1.png)
 <br>
-- index.html 소스 수정
-- docker 이미지 빌드
+
+#### index.html 소스 수정
+#### docker 이미지 빌드
 ![fix_index_image_build](images/fix_index_image_build.png)
 <br>
-- ghcr에 이미지 업로드
+
+#### ghcr에 이미지 업로드
 ![image_upload](images/image_upload.png)
 <br>
-- deployment 이미지 변경
-- 롤링 업데이트 확인 및 롤백
+
+#### deployment 이미지 변경
+#### 롤링 업데이트 확인 및 롤백
 ![change_image](images/change_image.png)
 <br>
-- kubectl rollout history 결과 확인
+
+#### kubectl rollout history 결과 확인
 ![kubectl_rollout_history](images/kubectl_rollout_history.png)
