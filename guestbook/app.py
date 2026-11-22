@@ -86,7 +86,6 @@ def incr_visits() -> int:
 # ---------------------------------------------------------------
 @app.route("/")
 def index():
-    visits = incr_visits()
     return render_template(
         "index.html",
         title=APP_TITLE,
