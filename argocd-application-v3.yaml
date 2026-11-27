@@ -1,0 +1,18 @@
+apiVersion: argoproj.io/v1alpha1
+kind: Application
+metadata:
+  name: guestbook-v3
+  namespace: argocd
+spec:
+  project: default
+  source:
+    repoURL: https://github.com/nz663633/devops.git
+    targetRevision: main
+    path: guestbook-v3/k8s
+  destination:
+    server: https://kubernetes.default.svc
+    namespace: default
+  syncPolicy:
+    automated:
+      prune: true
+      selfHeal: true
