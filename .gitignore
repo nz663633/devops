@@ -3,3 +3,4 @@ week04/restore-check/
 *:Zone.Identifier
 .env
 __pycache__/
+guestbook-v3/k8s/secret.yaml
